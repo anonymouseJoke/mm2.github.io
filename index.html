@@ -77,6 +77,7 @@
                         <div class="limit-box">
                            <nav class="main-menu">
                               <ul class="menu-area-main">
+                                  <button id="warning">Announcement!</button>
                                  <li> <a href="index.html">Home</a> </li>
                                  <li><a href="shop.html">Shop</a></li>
                                  <li><a href="support.html">Support</a></li>
@@ -201,5 +202,67 @@
          });
          
       </script> 
+
+<!-- warning -->
+             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.all.min.js"></script>
+            
+            
+            <script>
+// Alert Modal Type
+
+		$(document).on('click', '#warning', function(e) {
+			swal(
+				'Announcement!',
+				'Shop will be offline from 24 december till 1 January 2022. If you bought someting after 24 december Please contact us by going to <a target="_blank" href="https://www.jokesmm2shop.xyz/support.html"> support </a> or by joining our <a target="_blank" href="https://discord.gg/mYgKRkcBce"> discord server </a> <b style="color:coral;">warning</b> System!',
+				'warning'
+			)
+		});
+
+</script>
+            
+            
+            
+            <style>
+  body {
+  background-color: aliceblue;
+  font-family: sans-serif;
+  text-align: center;
+}
+button {
+  background-color: cadetblue;
+  color: whitesmoke;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 7px;
+  padding: 15px 35px;
+  cursor: pointer;
+  white-space: nowrap;
+  margin: 10px;
+}
+img {
+  width: 200px;
+}
+input[type="text"] {
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+h1 {
+  border-bottom: solid 2px grey;
+}
+#warning {
+  background: coral;
+}
+
+</style>
+            
+            <!-- warning end -->
+
    </body>
 </html>
